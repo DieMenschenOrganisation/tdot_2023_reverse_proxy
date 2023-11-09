@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-RUN ls
+VOLUME ["/certs"]
 
 COPY /certs/cert.crt /etc/cert.crt
 COPY /certs/cert.key /etc/cert.key
