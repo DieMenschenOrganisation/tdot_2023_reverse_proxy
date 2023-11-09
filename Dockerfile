@@ -1,7 +1,7 @@
 FROM nginx:latest
 
-COPY ./cert.cer /etc/cert.crt
-COPY ./cert.key /etc/cert.key
+COPY ./certs/cert.cer /etc/cert.crt
+COPY ./certs/cert.key /etc/cert.key
 
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 
